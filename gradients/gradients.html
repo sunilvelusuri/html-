@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #context{
+            height: 0px;
+            width: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: all 0.7s ease-in-out;
+        }
+        #context:target{
+            height:300px;
+            width: 300px;
+            top: 30%;
+            left: 30%;
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; */
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#context">Light box</a>
+    </div>
+    <div id="context">
+        <a href="#">x</a>
+    </div>
+
+</body>
+</html>
